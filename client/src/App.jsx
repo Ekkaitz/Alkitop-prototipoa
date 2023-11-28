@@ -26,7 +26,6 @@ function App () {
     < >
       <Header/>
 
-      <hr />
 
       <div className='row pt-4 '>
         <IconMenu image={plane} href='#' />
@@ -51,19 +50,18 @@ function App () {
         <Title title='ECO produktuak' />
         <div className='row row-cols-md-6 row-cols-sm-1 rounded-3 flex-wrap-reverse justify-content-around'>
 
-          <Card image={tent} product='Produktua' prezioa='12€/egun' />
-          <Card image={camara} product='Produktua' prezioa='12€/egun' />
-          <Card image={eskiak} product='Produktua' prezioa='12€/egun' />
-          <Card image={bizikleta} product='Produktua' prezioa='12€/egun' />
+          <Card image={tent} product='Denda' prezioa='12€/egun' />
+          <Card image={camara} product='Kamara' prezioa='42€/egun' />
+          <Card image={eskiak} product='Eskiak' prezioa='12€/egun' />
+          <Card image={bizikleta} product='Bizikleta' prezioa='22€/egun' />
         </div>
 
         <Title title='Beste produktuak' />
         <div className='row row-cols-md-6 row-cols-sm-1 rounded-3 flex-wrap-reverse justify-content-around'>
-
-          <Card image={tent} product='Produktua' prezioa='12€/egun' />
-          <Card image={camara} product='Produktua' prezioa='12€/egun' />
-          <Card image={eskiak} product='Produktua' prezioa='12€/egun' />
-          <Card image={bizikleta} product='Produktua' prezioa='12€/egun' />
+          <Card image={tent} product='Denda' prezioa='12€/egun' />
+          <Card image={camara} product='Kamara' prezioa='42€/egun' />
+          <Card image={eskiak} product='Eskiak' prezioa='12€/egun' />
+          <Card image={bizikleta} product='Bizikleta' prezioa='22€/egun' />
         </div>
       </div>
 
