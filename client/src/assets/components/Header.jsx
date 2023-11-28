@@ -1,10 +1,10 @@
-import logo from '../img/alkitop_logo.png'
+import logo from '../img/logotxuria.png'
 
 export const Header = () => {
   return (
 
-    <header className='row'>
-      <nav className='navbar bg-white'>
+    <header className='row w-100'>
+      <nav className='navbar bg-success'>
         <div className='container-fluid'>
           <img src={logo} className=' col-1 navbar-brand ' />
           <form className='d-flex' role='search'>

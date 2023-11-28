@@ -10,3 +10,7 @@
 .h-300 {
   height: 300px !important;
 }
+
+.x{
+  overflow-x: hidden;
+}

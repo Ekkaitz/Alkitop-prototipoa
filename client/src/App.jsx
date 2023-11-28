@@ -3,6 +3,7 @@ import { Header } from './assets/components/Header'
 import { IconMenu } from './assets/components/IconMenu'
 import { Card } from './assets/components/card'
 import { Title } from './assets/components/Title'
+import { Footer } from './assets/components/footer'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
@@ -17,13 +18,13 @@ import car from './assets/svg/car.svg'
 
 import tent from './assets/img/high-peak-minipack-2p-azul-tienda-de-campana-canadiense.jpg'
 import bizikleta from './assets/img/bici.jpg'
-import camara from './assets/img/camara.webp'
+import camara from './assets/img/camara.png'
 import eskiak from './assets/img/eskiak.png'
 
 function App () {
   return (
-    <>
-      <Header />
+    < >
+      <Header/>
 
       <hr />
 
@@ -48,7 +49,7 @@ function App () {
       <div className=' m-5 '>
 
         <Title title='ECO produktuak' />
-        <div className='row row-cols-6 rounded-3 flex-wrap-reverse justify-content-around'>
+        <div className='row row-cols-md-6 row-cols-sm-1 rounded-3 flex-wrap-reverse justify-content-around'>
 
           <Card image={tent} product='Produktua' prezioa='12€/egun' />
           <Card image={camara} product='Produktua' prezioa='12€/egun' />
@@ -56,16 +57,18 @@ function App () {
           <Card image={bizikleta} product='Produktua' prezioa='12€/egun' />
         </div>
 
-        <Title title='Beste produktuak' className=' mt-5' />
-        <div className='row row-cols-6 rounded-3 flex-wrap-reverse justify-content-around '>
+        <Title title='Beste produktuak' />
+        <div className='row row-cols-md-6 row-cols-sm-1 rounded-3 flex-wrap-reverse justify-content-around'>
 
           <Card image={tent} product='Produktua' prezioa='12€/egun' />
-          <Card image={tent} product='Produktua' prezioa='12€/egun' />
-          <Card image={tent} product='Produktua' prezioa='12€/egun' />
-          <Card image={tent} product='Produktua' prezioa='12€/egun' />
+          <Card image={camara} product='Produktua' prezioa='12€/egun' />
+          <Card image={eskiak} product='Produktua' prezioa='12€/egun' />
+          <Card image={bizikleta} product='Produktua' prezioa='12€/egun' />
         </div>
       </div>
 
+
+      <Footer/>
     </>
   )
 }
