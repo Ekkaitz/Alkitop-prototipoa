@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import { Card } from './card'
+import { img } from '../img/alkitop_logo.png'
 
 export default class SimpleSlider extends Component {
   render () {
@@ -7,18 +9,16 @@ export default class SimpleSlider extends Component {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 1,
       slidesToScroll: 1
     }
     return (
       <div>
         <h2> Single Item</h2>
         <Slider {...settings}>
+          <div />
           <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
+            <Card image={img} />
           </div>
           <div>
             <h3>3</h3>

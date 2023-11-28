@@ -2,8 +2,10 @@ import React from 'react'
 import { Header } from './assets/components/Header'
 import { IconMenu } from './assets/components/IconMenu'
 import { Card } from './assets/components/card'
+import { Title } from './assets/components/Title'
 
 import 'bootstrap/dist/css/bootstrap.css'
+import './App.css'
 
 import plane from './assets/svg/plane.svg'
 import book from './assets/svg/book.svg'
@@ -34,16 +36,28 @@ function App () {
         <IconMenu image={camera} href='#' />
       </div>
 
-      <div className=' my-5 '>
-        <hr />
-      </div>
+      <div className=' m-5 '>
+        <div className=' my-5 '>
+          <hr />
+        </div>
 
-      <div className='row row-cols-5 rounded-3 flex justify-content-around flex-nowrap w-75 '>
-        <Card image={tent} product='Produktua' />
-        <Card image={tent} product='Produktua' />
-        <Card image={tent} product='Produktua' />
-        <Card image={tent} product='Produktua' />
-        <Card image={tent} product='Produktua' />
+        <Title title='ECO produktuak' />
+        <div className='row row-cols-5 rounded-3 flex-wrap-reverse justify-content-around'>
+
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+        </div>
+
+        <Title title='Beste produktuak' className=' mt-5' />
+        <div className='row row-cols-5 rounded-3 flex-wrap-reverse justify-content-around '>
+
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' />
+        </div>
       </div>
 
     </>
