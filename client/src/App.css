@@ -2,3 +2,11 @@
   background-color: #005635 !important;
   color: white;
 }
+
+.w-300 {
+  width: 300px !important;
+}
+
+.h-300 {
+  height: 300px !important;
+}

@@ -16,11 +16,16 @@ import bicycle from './assets/svg/bicycle.svg'
 import car from './assets/svg/car.svg'
 
 import tent from './assets/img/high-peak-minipack-2p-azul-tienda-de-campana-canadiense.jpg'
+import bizikleta from './assets/img/bici.jpg'
+import camara from './assets/img/camara.webp'
+import eskiak from './assets/img/eskiak.png'
 
 function App () {
   return (
     <>
       <Header />
+
+      <hr />
 
       <div className='row pt-4 '>
         <IconMenu image={plane} href='#' />
@@ -36,27 +41,28 @@ function App () {
         <IconMenu image={camera} href='#' />
       </div>
 
+      <div className=' my-5 '>
+        <hr />
+      </div>
+
       <div className=' m-5 '>
-        <div className=' my-5 '>
-          <hr />
-        </div>
 
         <Title title='ECO produktuak' />
-        <div className='row row-cols-5 rounded-3 flex-wrap-reverse justify-content-around'>
+        <div className='row row-cols-6 rounded-3 flex-wrap-reverse justify-content-around'>
 
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' prezioa='12€/egun' />
+          <Card image={camara} product='Produktua' prezioa='12€/egun' />
+          <Card image={eskiak} product='Produktua' prezioa='12€/egun' />
+          <Card image={bizikleta} product='Produktua' prezioa='12€/egun' />
         </div>
 
         <Title title='Beste produktuak' className=' mt-5' />
-        <div className='row row-cols-5 rounded-3 flex-wrap-reverse justify-content-around '>
+        <div className='row row-cols-6 rounded-3 flex-wrap-reverse justify-content-around '>
 
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
-          <Card image={tent} product='Produktua' />
+          <Card image={tent} product='Produktua' prezioa='12€/egun' />
+          <Card image={tent} product='Produktua' prezioa='12€/egun' />
+          <Card image={tent} product='Produktua' prezioa='12€/egun' />
+          <Card image={tent} product='Produktua' prezioa='12€/egun' />
         </div>
       </div>
 
