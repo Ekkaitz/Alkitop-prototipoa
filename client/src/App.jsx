@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './assets/components/Header'
 import { IconMenu } from './assets/components/IconMenu'
-import { Carrusel } from './assets/components/Carrusel'
+import { Card } from './assets/components/card'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -12,6 +12,8 @@ import camera from './assets/svg/camera.svg'
 import controller from './assets/svg/controller.svg'
 import bicycle from './assets/svg/bicycle.svg'
 import car from './assets/svg/car.svg'
+
+import tent from './assets/img/high-peak-minipack-2p-azul-tienda-de-campana-canadiense.jpg'
 
 function App () {
   return (
@@ -36,7 +38,13 @@ function App () {
         <hr />
       </div>
 
-      <Carrusel />
+      <div className='row row-cols-5 rounded-3 flex justify-content-around flex-nowrap w-75 '>
+        <Card image={tent} product='Produktua' />
+        <Card image={tent} product='Produktua' />
+        <Card image={tent} product='Produktua' />
+        <Card image={tent} product='Produktua' />
+        <Card image={tent} product='Produktua' />
+      </div>
 
     </>
   )
