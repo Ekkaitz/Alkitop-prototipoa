@@ -1,6 +1,8 @@
 import React from 'react'
 import { Header } from './assets/components/Header'
 import { IconMenu } from './assets/components/IconMenu'
+import { Carrusel } from './assets/components/Carrusel'
+
 import 'bootstrap/dist/css/bootstrap.css'
 
 import plane from './assets/svg/plane.svg'
@@ -33,6 +35,8 @@ function App () {
       <div className=' my-5 '>
         <hr />
       </div>
+
+      <Carrusel />
 
     </>
   )
