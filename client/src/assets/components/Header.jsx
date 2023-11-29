@@ -4,7 +4,7 @@ export const Header = () => {
   return (
 
     <header className='row w-100 bg-success align-items-center p-0 m-0 align-content-center '>
-      <img src={logo} className=' col-lg-1 col-sm-2 navbar-brand ' />
+      <img src={logo} className=' col-lg-1 col-sm-2 navbar-brand' />
       <nav className='navbar col-lg-9 col-sm-8 '>
         <div className='container-fluid'>
           <form className='d-flex w-100 ' role='search'>
